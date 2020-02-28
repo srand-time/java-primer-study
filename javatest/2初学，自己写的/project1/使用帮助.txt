@@ -1,0 +1,4 @@
+在当前文件夹之下执行
+javac main.java
+java   main.java
+（一定要是main函数所在的文件）。

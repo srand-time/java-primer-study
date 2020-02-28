@@ -1,0 +1,50 @@
+用管理员权限运行cmd
+net start mysql
+mysql -hlocalhost -uroot -p456321
+启动mysql
+
+如果想用java链接mysql需要将mysql-connector-java-8.0.19.jar包解压到当前想要运行的工程之下（当前文件夹下）。
+
+一些命令：
+1.show databases;
+
+2.show tables;
+
+3.use    xxx;		//(一个database的名字)
+
+4.DROP DATABASE IF EXISTS learnjdbc;
+
+5.CREATE DATABASE learnjdbc;
+
+6.USE learnjdbc;
+
+7.CREATE TABLE students (
+  id BIGINT AUTO_INCREMENT NOT NULL,
+  name VARCHAR(50) NOT NULL,
+  gender TINYINT(1) NOT NULL,
+  grade INT NOT NULL,
+  score INT NOT NULL,
+  PRIMARY KEY(id)
+) Engine=INNODB DEFAULT CHARSET=UTF8;
+
+8.插入语句
+INSERT INTO students (name, gender, grade, score) VALUES ('小明', 1, 1, 88);
+//字符用单引号
+
+9.SELECT * FROM students;
+
+10.查询语句 
+	select * from students where gender=1 and score>90;
+	select id from students where gender=1 and score>90;
+	select * from students where score between 60 and 90;	//between-and在什么什么之间   
+	select * from students where gender<>1;			//<>不等于
+	select cust_id from customers where cust_email is null	//检查空值
+	select * from students order by score;			//按分数正序排序
+	//where 子句可以用and,or连接，加上圆括号可限制计算次序。还可以用in指定范围。
+	select * from students order by score desc;
+	select * from students limit 5;//限制只返回前5行
+	select students.name from test_1_jdbc.students;
+	//完全限定表名和列名。
+	select * from students order by gender,score;
+	//先按第一个排序再按第二个排序。都是从小到大排。
+	
