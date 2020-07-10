@@ -1,0 +1,9 @@
+1）路径
+
+
+F:
+cd java自己写的文件/java多线程入门
+
+
+2）解决java命令行下输出中文乱码:
+https://jingyan.baidu.com/article/0f5fb099f170566d8334eabf.html
