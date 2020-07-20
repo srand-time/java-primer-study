@@ -20,4 +20,4 @@
 
 在项目上点击，config-->convert to maven project即可完成转换。如下图:
 
-![1595251965882](dynamic web project添加maven.JPG)
+![dynamic web project添加maven](dynamic web project添加maven.JPG)
