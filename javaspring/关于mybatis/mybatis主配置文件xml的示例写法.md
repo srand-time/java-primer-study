@@ -256,5 +256,5 @@ foreach的几个属性：
 
 # 文件结构截图:
 
-![](.\mybatis项目结构示例.JPG)
+![](mybatis项目结构示例.JPG)
 
