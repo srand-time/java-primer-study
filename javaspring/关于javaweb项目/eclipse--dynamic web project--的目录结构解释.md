@@ -15,7 +15,7 @@
 
 ### build文件夹：
 
-eclipse新建的Dynamic web project 默认是bai将类编译在build
+eclipse新建的Dynamic web project 默认是将类编译在build
 
 
 

@@ -1,0 +1,3 @@
+在javaBuildPath中删除src
+
+然后分别添加其下的其他文件即可
