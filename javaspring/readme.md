@@ -1,4 +1,4 @@
-该目录下文件是有关spring的一些知识的总结
+#### 该目录下文件是有关spring的一些知识的总结
 
 
 
@@ -31,3 +31,14 @@ IOC从容器中获取对象
 解决办法：使用javabean，（1）创建容器，（2）读配置文件，（3）反射创建对象，添加到容器，
 
 （4）使用（单例，多实例）
+
+
+
+### Spring中的配置文件文件位置
+
+##### 在Java开发中，一般在Spring框架中，classpath的位置是指src下，在IDEA中一般是指resource中
+
+#####  配置文件
+
+- 位置：任意，开发中一般在classpath下（src）
+- 名称：任意，开发中常用applicationContext.xml
