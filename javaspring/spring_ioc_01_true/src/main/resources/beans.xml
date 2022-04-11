@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--使用spring创建对象，在spring这些被统称为bean -->
+	<bean id="mysqluser" class="UserDao.UserDaoMysql"/>
+	
+	
+	<!-- 
+		ref引用spring中的对象（bean中创建的）
+		value具体的值
+		property name该名字的写法是有一定规律的：去掉set，首字母小写
+		但set时首字母要大写
+	-->
+	
+	<bean id="user01" class="Service.UserServiceImpl">
+	<property name="userDao" ref="mysqluser"/>
+	</bean>
+</beans>           

@@ -1,4 +1,41 @@
-#### 该目录下文件是有关spring的一些知识的总结
+## 实际代码文件解释：
+
+```
+spring_ioc_01:
+	未使用spring框架，和之前写的java代码差不多，是为了引入控制反转这一概念。
+	使用了控制反转之后，不是每次都由程序员来创建对象而是根据用户需要。
+	软件系统在没有引入IOC容器之前，对象A依赖于对象B，那么对象A在初始化或者运行到某一点的时候，自己必须主动去创建对象B或者使用已经创建的对象B。无论是创建还是使用对象B，控制权都在自己手上。
+	软件系统在引入IOC容器之后，这种情形就完全改变了，由于IOC容器的加入，对象A与对象B之间失去了直接联系，所以，当对象A运行到需要对象B的时候，IOC容器会主动创建一个对象B注入到对象A需要的地方。
+```
+
+
+
+```
+spring_hellospring_02:
+	初次尝试使用spring框架，使用bean.xml来创建对象。
+	再由ApplicationContext context=new ClassPathXmlApplicationContext("bean.xml");
+		Hello hello=(Hello) context.getBean("hello");来获取对象。
+	并使用pom.xml，maven来获取所需的spring框架的代码。
+```
+
+
+
+```
+spring_ioc_01_true:
+	使用spring框架实现最开始所说的控制反转
+```
+
+
+
+
+
+
+
+
+
+
+
+## 该目录下文件是有关spring的一些知识的总结
 
 
 
